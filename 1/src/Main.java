@@ -3,7 +3,6 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-
 public class Main {
     public static void main(String[] args) {
         // экземпляр класса
@@ -39,6 +38,7 @@ public class Main {
         scanner.close();
     }
 }
+
 // класс репозиторий
 class PizzaRepository {
     private final List<Pizza> pizzas;
@@ -71,21 +71,25 @@ class PizzaRepository {
         pizzas.forEach(System.out::println);
     }
 }
+
 class Cheese extends Pizza {
     public Cheese(double price, double weight, double diameter, double calories) {
         super(price, weight, diameter, calories);
     }
 }
+
 class Meat extends Pizza {
     public Meat(double price, double weight, double diameter, double calories) {
         super(price, weight, diameter, calories);
     }
 }
+
 class Pepperoni extends Pizza {
     public Pepperoni(double price, double weight, double diameter, double calories) {
         super(price, weight, diameter, calories);
     }
 }
+
 abstract class Pizza {
     protected double price;
     protected double weight;
